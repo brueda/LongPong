@@ -1,5 +1,7 @@
 package com.ubhacking.game.state;
 
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.view.MotionEvent;
 import com.ubhacking.framework.util.Painter;
 import com.ubhacking.simpleandroidgdf.Assets;
@@ -15,7 +17,9 @@ public class MenuState extends State {
 
 	@Override
 	public void render(Painter g) {
-		g.drawImage(Assets.welcome, 0, 0);
+        g.setFont(Typeface.SERIF, 50);
+		g.setColor(Color.YELLOW);
+		g.drawString("LONG PONG",300,200);
 	}
 
 	@Override
