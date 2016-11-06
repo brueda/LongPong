@@ -4,6 +4,7 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.view.MotionEvent;
 import com.ubhacking.framework.util.Painter;
+import com.ubhacking.game.classes.Player;
 import com.ubhacking.simpleandroidgdf.Assets;
 
 public class MenuState extends State {
@@ -24,6 +25,7 @@ public class MenuState extends State {
 
 	@Override
 	public boolean onTouch(MotionEvent e, int scaledX, int scaledY) {
+        new Player();
 		setCurrentState(new PlayState());
         return true;
 	}
