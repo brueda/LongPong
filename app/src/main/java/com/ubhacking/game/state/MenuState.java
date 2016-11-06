@@ -24,6 +24,7 @@ public class MenuState extends State {
 
 	@Override
 	public boolean onTouch(MotionEvent e, int scaledX, int scaledY) {
-		return false;
+		setCurrentState(new PlayState());
+        return true;
 	}
 }
