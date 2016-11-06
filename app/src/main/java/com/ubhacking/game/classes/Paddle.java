@@ -20,9 +20,9 @@ public class Paddle {
 
     public void move(int touchPos) {
         if (touchPos < pos - 20) {
-            pos -= 30;
+            pos -= 25;
         } else if (touchPos > pos + 20) {
-            pos += 30;
+            pos += 25;
         }
     }
 }

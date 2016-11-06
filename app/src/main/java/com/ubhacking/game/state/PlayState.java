@@ -21,7 +21,6 @@ public class PlayState extends State {
     public void render(Painter g) {
         g.setColor(Color.BLACK);
         g.fillRect(0,0,800,450);
-        g.setColor(Color.YELLOW);
         Player.drawPaddle(g);
     }
 
